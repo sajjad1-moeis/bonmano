@@ -1,0 +1,11 @@
+.parentFoter {
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   background-image: url("../Footer/img/back.jpg");
+}
+.liner {
+   background-color: black;
+   width: 100%;
+   height: 100%;
+}

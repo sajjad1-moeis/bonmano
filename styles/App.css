@@ -1,0 +1,257 @@
+@font-face {
+   font-family: Dana;
+   src: url(../font/dana-light.woff);
+}
+* {
+   font-family: Dana !important;
+}
+
+/* scrool Bar */
+::-webkit-scrollbar {
+   width: 5px;
+   background-color: white;
+}
+
+/* قسمت ثابت */
+*::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+/* قسمت متحرک */
+::-webkit-scrollbar-thumb {
+   scrollbar-width: thin;
+   background: #009879;
+   border-radius: 10px;
+}
+
+/* Header */
+
+.heder {
+   transition: 0.6s;
+}
+.activeHeder {
+   box-shadow: 0px 9px 15px -5px rgba(0, 0, 0, 0.1);
+   top: 0;
+}
+
+/* back Slide1 */
+
+.a {
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+.a::before {
+   border-radius: 35px;
+   background: #e4e9f1;
+   content: "";
+   top: 20px;
+   bottom: 20px;
+   right: 40px;
+   left: 30px;
+   -webkit-transform: rotate(-5deg);
+   -moz-transform: rotate(-5deg);
+   -ms-transform: rotate(-5deg);
+   transform: rotate(-5deg);
+   position: absolute;
+   z-index: -10;
+}
+
+/* Item Slide */
+
+.slick-slide {
+   padding: 5px;
+   text-align: center;
+}
+@media (min-width: 776px) {
+   .slick-slide {
+      padding: 10px;
+   }
+}
+.slick-slide .img {
+   display: flex !important;
+   width: 100% !important;
+}
+
+.slick-arrow {
+   display: none !important;
+}
+
+.slide3 .slick-slide {
+   padding: 0;
+}
+
+/* Drawer */
+
+.drawer .inset-0 {
+   position: fixed;
+}
+
+.activeBtn img {
+   filter: brightness(0) invert(1);
+}
+
+/* HelpYou */
+
+.helpYou::before,
+.helpYou::after {
+   content: "";
+   display: block;
+   position: absolute;
+   inset: 0;
+   background-size: contain;
+   width: 100%;
+   height: 100%;
+   background-repeat: repeat;
+   pointer-events: none;
+   filter: brightness(2);
+}
+.helpYou::before {
+   background-image: url("https://www.bonmano.com/wp-content/themes/websima/assets/img/bg1.png");
+   animation: bgMoved 60s linear infinite forwards;
+}
+.helpYou::after {
+   background-image: url("https://www.bonmano.com/wp-content/themes/websima/assets/img/bg2.png");
+   animation: bgMoved 50s linear infinite forwards;
+}
+@keyframes bgMoved {
+   100% {
+      background-position: 0 43rem;
+      opacity: 0.5;
+   }
+}
+.slickAnimate {
+   animation: effect 1.5s;
+}
+@keyframes effect {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+/* slide1Home */
+.slide1Home .arrow1 {
+   transform: rotate(180deg);
+}
+
+/* Slide5Active */
+
+.slide5Div {
+   transition: 0.3s;
+}
+.slide5Div::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   transform: scale(0);
+   transition: 0.3s;
+   background-color: #009879;
+}
+.slide5Div:hover {
+   color: #009879;
+}
+
+.activeSlide5::before {
+   transform: scale(1);
+}
+.activeSlide5 {
+   color: #009879;
+}
+
+.slide3 .slick-slide {
+   padding: 0;
+}
+
+.hhh {
+   background: linear-gradient(0deg, rgba(0, 167, 137, 1) 0%, rgba(0, 167, 137, 1) 0%, rgba(54, 186, 162, 1) 0%, rgba(255, 255, 255, 1) 60%);
+}
+
+/* ////////////// Slide ProductPage */
+
+.productPage .slick-dots {
+   display: flex;
+   position: relative;
+   margin-top: -25px;
+}
+.productPage .slick-dots li {
+   opacity: 0.5;
+   width: 90px;
+   height: 90px;
+}
+.productPage .slick-dots .slick-active {
+   opacity: 1;
+}
+
+/* ////////////////////////////////// Accordian */
+
+.acord {
+   transition: height 0.4s ease-in-out;
+}
+
+.accordNumber {
+   padding: 3px;
+   display: flex;
+   position: relative;
+   align-items: center;
+}
+.accordNumber::before {
+   content: "";
+   position: absolute;
+   width: 8px;
+   height: 2px;
+   background-color: black;
+   right: -8px;
+}
+/* 
+/////////////////////// CategoryBlog */
+.CategoryBlog .arrow {
+   position: absolute;
+   bottom: -60px;
+   font-size: 20px;
+}
+.CategoryBlog .arrow1 svg {
+   left: 48%;
+}
+.CategoryBlog .arrow2 svg {
+   right: 48%;
+   transform: rotate(180deg);
+}
+
+/* TemplateBlog */
+
+.absloteImgTemplateBlog,
+.tilteTemplateBlog {
+   transition: 0.3s;
+}
+.blogContainer {
+   cursor: pointer;
+   transition: 0.3s;
+   border: 1px solid #e0e0e0;
+   position: relative;
+}
+.blogContainer:hover {
+   border-color: #009879;
+}
+.blogContainer:hover .absloteImgTemplateBlog {
+   opacity: 0.5;
+}
+.blogContainer:hover .tilteTemplateBlog {
+   color: #009879;
+}
+/* Calender */
+.rmdp-shadow {
+   box-shadow: none !important ;
+   /* color: rgb(51, 53, 70) */
+}
+
+.rmdp-top-class {
+   display: block !important;
+}
+.rmdp-day-picker {
+   display: block !important;
+}

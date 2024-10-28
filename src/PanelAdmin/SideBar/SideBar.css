@@ -1,0 +1,8 @@
+.activeSid .subSid {
+   background-color: #c5c8ce;
+   color: #263238 !important;
+   border-radius: 8px;
+}
+.subSid {
+   margin: 4px 0;
+}

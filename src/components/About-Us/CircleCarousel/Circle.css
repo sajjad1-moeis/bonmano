@@ -1,0 +1,187 @@
+.circleParent {
+   transition: 0.5s;
+   border-radius: 50%;
+   border: 2px solid;
+   padding: 15%;
+   border: 1.5px solid #e9cda7;
+}
+@media (min-width: 776px) {
+   .circleParent {
+      padding: 8%;
+   }
+}
+
+.circleChild {
+   padding: 6px;
+   position: absolute;
+   border-radius: 50%;
+   background-color: #fbebce;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   margin: 2px;
+   bottom: 0;
+   transition: 0.5s;
+}
+/* //////////////////////////////// */
+.circleChild:nth-child(1) {
+   right: 73%;
+   top: 4%;
+}
+.circleChild:nth-child(2) {
+   left: -3.5%;
+   top: 48%;
+}
+.circleChild:nth-child(3) {
+   left: 23%;
+   top: 90%;
+}
+.circleChild:nth-child(4) {
+   right: 18%;
+   bottom: 4.5%;
+}
+.circleChild:nth-child(5) {
+   right: -4%;
+   top: 42%;
+}
+.circleChild:nth-child(6) {
+   right: 24%;
+   top: 1%;
+}
+
+.activeCircle {
+   scale: 1.8;
+   padding: 6px;
+}
+
+.circle {
+   transform-origin: center center;
+   transition: 0.5s;
+   left: 0;
+   top: 0;
+   max-width: 100%;
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+   position: absolute;
+}
+@media (max-width: 776px) {
+   .circle {
+      transform: rotate(-30deg);
+   }
+}
+
+.tooltip::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   margin: -12px auto;
+   width: 2px;
+   height: 100%;
+   z-index: -1;
+   border-top: 15px solid transparent;
+   border-left: 15px solid black;
+   border-bottom: 15px solid transparent;
+   rotate: 270deg;
+}
+
+.titleCircleCarousel::after {
+   content: "";
+   position: absolute;
+   right: 16.5px;
+   width: 10px;
+   height: 10px;
+   top: 0;
+   background-color: #e9cda7;
+   border-radius: 50%;
+}
+.titleCircleCarousel::before {
+   content: "";
+   position: absolute;
+   top: 8px;
+   right: 20.5px;
+   width: 2px;
+   height: 15px;
+   background-color: #e9cda7;
+   border-bottom-left-radius: 50%;
+   border-bottom-right-radius: 50%;
+}
+/* 
+.App {
+   font-family: sans-serif;
+   margin: auto;
+   overflow: hidden;
+   padding: 10px;
+}
+
+.carousel {
+   position: relative;
+   max-width: 300px;
+   min-height: 300px;
+   border: 2px solid;
+   border-radius: 50%;
+   transition: 0.5s;
+   transform-origin: center center;
+}
+@media (min-width: 776px) {
+   .carousel {
+      max-width: 400px;
+      min-height: 400px;
+   }
+}
+.carousel::before {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   background: #000;
+   border-radius: 50% 0 0 50%;
+}
+.item-carousel {
+   position: absolute;
+   border-radius: 50%;
+   border: 1px solid red;
+   background: #fff;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+   margin: 2px;
+   bottom: 0;
+   transition: 0.5s;
+
+   &.active {
+      background: #000;
+      color: white;
+      scale: 1.5;
+   }
+
+   &:nth-child(1) {
+      right: 70%;
+      top:1%;
+   }
+   &:nth-child(2) {
+      left: -6%;
+      top: 42%;
+   }
+   &:nth-child(3) {
+      left: 19%;
+      top: 85%;
+   }
+   &:nth-child(4) {
+      right: 19%;
+      top: 85%;
+   }
+   &:nth-child(5) {
+      right: -6%;
+      top: 42%;
+   }
+   &:nth-child(6) {
+      right: 20%;
+      top:0%;
+   }
+} */

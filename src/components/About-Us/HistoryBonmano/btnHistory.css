@@ -1,0 +1,60 @@
+.ff::before,
+.ff::after {
+   width: 60%;
+   height: 5px;
+   content: "";
+   position: absolute;
+   margin: auto 0;
+   border-radius: 12px;
+   z-index: -1;
+   background-color: #009879;
+}
+
+@media (max-width: 776px) {
+   .ff::before,
+   .ff::after {
+      height: 6.5px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+
+      width: 70%;
+   }
+   .ff::after {
+      top: -5px;
+   }
+   .ff::before {
+      bottom: -5px;
+   }
+}
+@media (min-width: 800px) {
+   .ff::before {
+      left: -5.5px;
+      height: 60%;
+      width: 8px;
+      top: 50%;
+      transform: translate(0%, -50%);
+   }
+   .ff::after {
+      top: 5px;
+      right: 5px;
+   }
+}
+.btnHistory {
+   transition: 0.3s;
+}
+.btnHistory::after {
+   content: "";
+   height: 1.5px;
+   background: #009879;
+   position: absolute;
+   left: -15px;
+   top: 40%;
+   transform: translate(0, -100%);
+   transition: 0.2s linear;
+}
+.activeBtnHistory {
+   transform: translateY(-24px) rotate(-90deg) !important ;
+}
+.activeBtnHistory::after {
+   width: 12px;
+}
