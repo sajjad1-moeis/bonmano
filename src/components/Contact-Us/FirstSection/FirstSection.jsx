@@ -4,10 +4,10 @@ import {LogoSocialNetwork} from "../../Footer/Footer";
 import {Textarea, Input, Button} from "@material-tailwind/react";
 import "./FirstSection.css";
 let Items = [
-   {img: "./src/components/Contact-Us/FirstSection/img/1 (1).svg", title: "پشتیبانی وبسایت"},
-   {img: "./src/components/Contact-Us/FirstSection/img/1 (2).svg", title: "درخاست نمایندگی"},
-   {img: "./src/components/Contact-Us/FirstSection/img/1 (3).svg", title: "فروش هورا"},
-   {img: "./src/components/Contact-Us/FirstSection/img/1 (4).svg", title: "فروش سازمانی"},
+   {img: "/img/Contact-Us/1 (1).svg", title: "پشتیبانی وبسایت"},
+   {img: "/img/Contact-Us/1 (2).svg", title: "درخاست نمایندگی"},
+   {img: "/img/Contact-Us/1 (3).svg", title: "فروش هورا"},
+   {img: "/img/Contact-Us/1 (4).svg", title: "فروش سازمانی"},
 ];
 
 export default function FirstSection() {

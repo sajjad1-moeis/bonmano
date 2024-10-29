@@ -2,11 +2,11 @@ import React from "react";
 import CarouselEsy from "../../../CarouselEsy/CarouselEsy";
 import {IoIosArrowBack} from "react-icons/io";
 let itemCarousel = [
-   {title: "طرز تهیه نوشیدنی", img: "../src/components/BlogPage/CategoryContents/img/1 (1).svg"},
-   {title: "طرز تهیه نوشیدنی", img: "../src/components/BlogPage/CategoryContents/img/1 (2).svg"},
-   {title: "طرز تهیه نوشیدنی", img: "../src/components/BlogPage/CategoryContents/img/1 (3).svg"},
-   {title: "طرز تهیه نوشیدنی", img: "../src/components/BlogPage/CategoryContents/img/1 (4).svg"},
-   {title: "طرز تهیه نوشیدنی", img: "../src/components/BlogPage/CategoryContents/img/1 (5).svg"},
+   {title: "طرز تهیه نوشیدنی", img: "/img/blogPage/CategoryContents/1 (1).svg"},
+   {title: "طرز تهیه نوشیدنی", img: "/img/blogPage/CategoryContents/1 (2).svg"},
+   {title: "طرز تهیه نوشیدنی", img: "/img/blogPage/CategoryContents/1 (3).svg"},
+   {title: "طرز تهیه نوشیدنی", img: "/img/blogPage/CategoryContents/1 (4).svg"},
+   {title: "طرز تهیه نوشیدنی", img: "/img/blogPage/CategoryContents/1 (5).svg"},
 ];
 export default function CategoryContents() {
    let bind = {

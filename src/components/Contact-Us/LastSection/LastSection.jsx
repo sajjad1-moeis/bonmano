@@ -12,7 +12,7 @@ export default function LastSection() {
    return (
       <div className='container grid grid-cols-1 md:grid-cols-2 my-10 mb-10 md:mb-20 md:mt-40'>
          <div className='rounded-2xl overflow-hidden'>
-            <img src='./src/components/Contact-Us/LastSection/img/img.jpg' alt='' />
+            <img src='/img/Contact-Us/img.jpg' alt='' />
          </div>
          <div className='p-5 h-max my-auto'>
             <div className=' bg-successDark p-5 md:p-10 rounded-2xl -mt-20 md:-ms-10'>

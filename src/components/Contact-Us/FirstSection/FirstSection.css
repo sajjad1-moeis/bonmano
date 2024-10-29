@@ -1,5 +1,5 @@
 .containerContact-us {
-   background-image: url(./src/components/Contact-Us/FirstSection/img/بنر.png);
+   background-image: url(/img/Contact-Us/بنر.png);
 }
 .containerContact-us::before {
    content: "";
