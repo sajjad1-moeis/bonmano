@@ -17,7 +17,7 @@ export default function NextSectionCircle() {
                {Items.map((item, index) => (
                   <div key={index}>
                      <div className='overflow-hidden rounded-xl border-2 border-white'>
-                        <img src={`./src/components/About-Us/nextSectionCircle/img${item.img}`} alt='' />
+                        <img src={`/img/About-Us/NextSectionCircle/${item.img}`} alt='' />
                         <p className='mt-5 hover:text-successDark transition-all cursor-pointer'>{item.title}</p>
                      </div>
                   </div>

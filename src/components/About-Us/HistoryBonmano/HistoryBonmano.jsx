@@ -26,8 +26,14 @@ export default function HistoryBonmano() {
                   <div className='md:me-3 ff absolute rounded-xl max-w-[800px] w-full h-full bg-[#F5F5F5] left-0 '></div>
                   <div className='relative py-10 grid gap-10  grid-cols-1 md:grid-cols-5 '>
                      <div className='p-5  md:flex md:col-span-2  md:p-0'>
-                        <div className='md:w-3 w-3/4 mx-auto h-2.5 md:h-3/4 text-successDark bg-successDark rounded-xl my-auto md:block hidden'>s</div>
-                        <img src={`./src/components/About-Us/HistoryBonmano/img${item.img}`} className='-mt-1 md:-ms-0.5 rounded-xl ' alt='' />
+                        <div className='md:w-3 w-3/4 mx-auto h-2.5 md:h-3/4 text-successDark bg-successDark rounded-xl my-auto md:block hidden'>
+                           s
+                        </div>
+                        <img
+                           src={`/img/About-Us/HistoryBonmano/${item.img}`}
+                           className='-mt-1 md:-ms-0.5 rounded-xl '
+                           alt=''
+                        />
                      </div>
                      <div className='md:col-span-3 h-max my-auto '>
                         <div className='w-full'>
@@ -50,7 +56,11 @@ export default function HistoryBonmano() {
          </div>
          <div className='flex gap-4 justify-center text-sm md:text-balance pt-5'>
             {itemYear.map((item) => (
-               <button key={item.id} onClick={() => setActiveBtn(item.id)} className={`relative  btnHistory -rotate-90 ${item.id === activeBtn ? "activeBtnHistory" : ""}`}>
+               <button
+                  key={item.id}
+                  onClick={() => setActiveBtn(item.id)}
+                  className={`relative  btnHistory -rotate-90 ${item.id === activeBtn ? "activeBtnHistory" : ""}`}
+               >
                   {item.year}
                </button>
             ))}

@@ -4,12 +4,30 @@ import "../CircleCarousel/Circle.css";
 import {Tooltip, Button} from "@material-tailwind/react";
 import {IoIosArrowBack} from "react-icons/io";
 let itemCircle = [
-   {title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول", img: "./src/components/About-Us/CircleCarousel/img/1 (1).svg"},
-   {title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول", img: "./src/components/About-Us/CircleCarousel/img/1 (2).svg"},
-   {title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول", img: "./src/components/About-Us/CircleCarousel/img/1 (3).svg"},
-   {title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول", img: "./src/components/About-Us/CircleCarousel/img/1 (4).svg"},
-   {title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول", img: "./src/components/About-Us/CircleCarousel/img/1 (5).svg"},
-   {title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول", img: "./src/components/About-Us/CircleCarousel/img/1 (6).svg"},
+   {
+      title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول",
+      img: "/img/About-Us/CircleCarousel/1 (1).svg",
+   },
+   {
+      title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول",
+      img: "/img/About-Us/CircleCarousel/1 (2).svg",
+   },
+   {
+      title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول",
+      img: "/img/About-Us/CircleCarousel/1 (3).svg",
+   },
+   {
+      title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول",
+      img: "/img/About-Us/CircleCarousel/1 (6).svg",
+   },
+   {
+      title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول",
+      img: "/img/About-Us/CircleCarousel/1 (5).svg",
+   },
+   {
+      title: "تلاش در جهت افزایش بهره‌وری و کاهش قیمت تمام شده محصول",
+      img: "/img/About-Us/CircleCarousel/1 (1).svg",
+   },
 ];
 
 export default function CircleCarousel() {
@@ -45,7 +63,11 @@ export default function CircleCarousel() {
                <img src='https://www.bonmano.com/wp-content/uploads/2023/10/01.png' className='w-60 md:w-80' alt='' />
                <div ref={refCircle} className='circle'>
                   {itemCircle.map((item, index) => (
-                     <div key={index} className={`circleChild ${activeBtn === index ? "activeCircle" : ""}`} style={{transform: `rotate(${itemDeg}deg)`}}>
+                     <div
+                        key={index}
+                        className={`circleChild ${activeBtn === index ? "activeCircle" : ""}`}
+                        style={{transform: `rotate(${itemDeg}deg)`}}
+                     >
                         <img src={item.img} alt='' />
                      </div>
                   ))}
@@ -58,7 +80,10 @@ export default function CircleCarousel() {
                <TooltipDefault click={nextSlideFunc} content={"بعد"} />
             </div>
          </div>
-         <div ref={refCintainer} className='md:col-span-3 pb-20 h-max titleCircleCarousel relative mt-10 md:my-auto text-center md:text-right px-8 md:px-9 '>
+         <div
+            ref={refCintainer}
+            className='md:col-span-3 pb-20 h-max titleCircleCarousel relative mt-10 md:my-auto text-center md:text-right px-8 md:px-9 '
+         >
             {itemCircle[activeBtn].title}
          </div>
       </div>
