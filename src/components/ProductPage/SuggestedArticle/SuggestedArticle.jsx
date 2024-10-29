@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import CarouselEsy from "../../../CarouselEsy/CarouselEsy";
 import TemplateArticle from "../../TemplateArticle/TemplateArticle";
 import useScrol from "../../../../Hook/useScrol";
+import {apiRightSlide2} from "../../../Supbase/Supbase";
 
 export default function SuggestedArticle() {
    useScrol();
@@ -23,11 +24,13 @@ export default function SuggestedArticle() {
       <div className='my-20 container'>
          <h1 className='my-5 text-xl font-bold text-center'>مقالات پیشنهادی</h1>
          <CarouselEsy count={3} isDot={false}>
-            {article.slice(0, 5).map((item, index) => (
-               <div key={index}>
-                  <TemplateArticle {...item} />
-               </div>
-            ))}
+            {article?.map((item, index) => {
+               return (
+                  <div key={index}>
+                     <TemplateArticle {...item} />
+                  </div>
+               );
+            })}
          </CarouselEsy>
       </div>
    );
