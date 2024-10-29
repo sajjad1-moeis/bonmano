@@ -31,19 +31,20 @@ export default function Footer() {
                <div className='m-auto h-max items-center p-5'>
                   <p className='text-5xl'>بن مانو</p>
                   <p className='my-5 max-w-[450px] text-gray-400'>
-                     برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                     برای تغییر این متن بر روی دکمه ویرایش کلیک کنید. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                     صنعت چاپ و با استفاده از طراحان گرافیک است.
                   </p>
                   <LogoSocialNetwork />
                </div>
             </div>
             <div className='md:col-span-3 h-max my-auto'>
-               <div className='grid grid-cols-2 md:grid-cols-3 gap-2'>
+               <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-2'>
                   {ItemFooter.map((item, index) => (
                      <div key={index} className='p-5 text-right'>
                         <div className='mb-5'>
                            <ItemBorder text={item.title} color='#1A251F' />
                         </div>
-                        <Link to={context.isLogin && context.isAdmin ? "/panelAdmin" : "/myAccount"}>
+                        <Link to={context.isLogin && "/panelAdmin"}>
                            <p className='my-4 text-white text-sm'>{context.isLogin ? "حساب کاربری" : "ثبت نام"}</p>
                         </Link>
                         {item.subItem.map((item, index) => (
@@ -68,7 +69,13 @@ export function LogoSocialNetwork({isBg}) {
       <div className='flex gap-2.5 text-xl'>
          {IconFooter.map((item, index) => (
             <Link key={index}>
-               <div className={`${isBg ? "bg-gray-800 text-white p-3 rounded-md hover:bg-successDark transition-all" : ""}`}>{item.element}</div>
+               <div
+                  className={`${
+                     isBg ? "bg-gray-800 text-white p-3 rounded-md hover:bg-successDark transition-all" : ""
+                  }`}
+               >
+                  {item.element}
+               </div>
             </Link>
          ))}
       </div>

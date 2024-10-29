@@ -60,8 +60,8 @@ export default function Header({isAdmin, getUser}) {
                            <TemplateSubMenu title={item.title} arr={item.subMenu} isMenu={true} />
                         </Link>
                      ))}
+                     <Link to='/blogs'>مجله ها</Link>
                   </div>
-                  <Link to='/blogs'>مجله ها</Link>
 
                   <NavLink to='/'>
                      <img src='https://www.bonmano.com/wp-content/uploads/2023/10/Group-1501.svg' alt='' />
