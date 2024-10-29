@@ -8,9 +8,9 @@ import ContextAll from "../../../../Context/Context";
 import {apiRightSlide2} from "../../../Supbase/Supbase";
 
 let imgBtnSlide4 = [
-   {id: 1, img: "./src/components/Home/Slide4/img/btn1.svg", title: "قهوه ترکیبی"},
-   {id: 2, img: "./src/components/Home/Slide4/img/btn2.svg", title: "قهوه تک‌خاستگاه"},
-   {id: 3, img: "./src/components/Home/Slide4/img/btn3.svg", title: "قهوه تخصصی"},
+   {id: 1, img: "/img/Home/Slide4/btn1.svg", title: "قهوه ترکیبی"},
+   {id: 2, img: "/img/Home/Slide4/btn2.svg", title: "قهوه تک‌خاستگاه"},
+   {id: 3, img: "/img/Home/Slide4/btn3.svg", title: "قهوه تخصصی"},
 ];
 export default function Slide4() {
    const [coffies, setCoffies] = useState([]);

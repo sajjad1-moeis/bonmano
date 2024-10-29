@@ -6,12 +6,12 @@ import BtnsCircleSlide from "../BtnCircleSlides/BtnsCircleSlides";
 import {apiRightSlide2} from "../../../Supbase/Supbase";
 
 let imgBtnSlide2 = [
-   {id: 1, img: "./src/components/Home/Slide2/img/btn1.svg", title: "دانه قهوه اسپرسو"},
-   {id: 2, img: "./src/components/Home/Slide2/img/btn2.svg", title: "نورسکا"},
-   {id: 3, img: "./src/components/Home/Slide2/img/btn3.svg", title: "پودر قهوه اسپرسو"},
-   {id: 4, img: "./src/components/Home/Slide2/img/btn4.svg", title: "قهوه فوری"},
-   {id: 5, img: "./src/components/Home/Slide2/img/btn5.svg", title: "پودرهای ترکیبی"},
-   {id: 6, img: "./src/components/Home/Slide2/img/btn6.svg", title: "کپسول قهوه اسپرسو"},
+   {id: 1, img: "/img/Home/Slide2/btn1.svg", title: "دانه قهوه اسپرسو"},
+   {id: 2, img: "/img/Home/Slide2/btn2.svg", title: "نورسکا"},
+   {id: 3, img: "/img/Home/Slide2/btn3.svg", title: "پودر قهوه اسپرسو"},
+   {id: 4, img: "/img/Home/Slide2/btn4.svg", title: "قهوه فوری"},
+   {id: 5, img: "/img/Home/Slide2/btn5.svg", title: "پودرهای ترکیبی"},
+   {id: 6, img: "/img/Home/Slide2/btn6.svg", title: "کپسول قهوه اسپرسو"},
 ];
 
 export default function Slide2() {

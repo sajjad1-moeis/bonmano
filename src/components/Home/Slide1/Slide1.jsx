@@ -3,11 +3,11 @@ import CarouselEsy from "../../../CarouselEsy/CarouselEsy";
 import {GoArrowLeft} from "react-icons/go";
 
 let dataSlider = [
-   {img: "./src/components/Home/Slide1/img/4.png", title: "کیک شکلاتی", English: "chuclte cake"},
-   {img: "./src/components/Home/Slide1/img/1.png", title: "هات چاکلت", English: "Hot choclate"},
-   {img: "./src/components/Home/Slide1/img/2.png", title: "دانه قهوه", English: "Stock images"},
-   {img: "./src/components/Home/Slide1/img/3.png", title: "استارباکس", English: "Starbucks"},
-   {img: "./src/components/Home/Slide1/img/4.png", title: "کیک شکلاتی", English: "chuclte cake"},
+   {img: "/img/Home/Slide1/4.png", title: "کیک شکلاتی", English: "chuclte cake"},
+   {img: "/img/Home/Slide1/1.png", title: "هات چاکلت", English: "Hot choclate"},
+   {img: "/img/Home/Slide1/2.png", title: "دانه قهوه", English: "Stock images"},
+   {img: "/img/Home/Slide1/3.png", title: "استارباکس", English: "Starbucks"},
+   {img: "/img/Home/Slide1/4.png", title: "کیک شکلاتی", English: "chuclte cake"},
 ];
 
 export default function Slide1() {
