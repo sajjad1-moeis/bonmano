@@ -30,7 +30,7 @@ export default function ProductPage() {
          setLoading(false);
       }
       s();
-   }, []);
+   }, [productId]);
 
    if (loading) return <Loader />;
 
