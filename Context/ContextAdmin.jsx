@@ -1,3 +1,3 @@
 import {createContext} from "react";
-let contextAdmin = createContext();
-export default contextAdmin;
+let ContextAdmin = createContext();
+export default ContextAdmin;

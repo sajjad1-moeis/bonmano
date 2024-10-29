@@ -2,13 +2,13 @@ import React, {useEffect, useState} from "react";
 import SideBar from "./SideBar/SideBar";
 import {useNavigate, Outlet} from "react-router-dom";
 import TopBar from "./TopBar/TopBar";
-import contextAdmin from "../../Context/ContextAdmin";
+import ContextAdmin from "../../Context/ContextAdmin";
 import {DrawerAdmin} from "../components/Drawer/Drawer";
 export default function PanelAdmin() {
    const [drawerAdmin, setDrawerAdmin] = useState(false);
 
    return (
-      <contextAdmin.Provider
+      <ContextAdmin.Provider
          value={{
             drawerAdmin,
             setDrawerAdmin,
@@ -22,6 +22,6 @@ export default function PanelAdmin() {
             </div>
             <DrawerAdmin />
          </div>
-      </contextAdmin.Provider>
+      </ContextAdmin.Provider>
    );
 }

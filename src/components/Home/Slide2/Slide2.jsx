@@ -1,11 +1,10 @@
 import React, {useContext, useEffect, useRef, useState} from "react";
 import ResponsiveCarousel from "../../../Carousel/Carousel";
-import ContextAll from "../../../../Context/Context";
 import useBtn from "../../../../Hook/useBtn";
 import useOpacity from "../../../../Hook/useOpacity";
 import BtnsCircleSlide from "../BtnCircleSlides/BtnsCircleSlides";
 import {apiRightSlide2} from "../../../Supbase/Supbase";
-let arrRightSlide2 = await apiRightSlide2("rightSlide2");
+
 let imgBtnSlide2 = [
    {id: 1, img: "./src/components/Home/Slide2/img/btn1.svg", title: "دانه قهوه اسپرسو"},
    {id: 2, img: "./src/components/Home/Slide2/img/btn2.svg", title: "نورسکا"},
@@ -19,7 +18,15 @@ export default function Slide2() {
    let refImg = useRef();
    const [coffies, setCoffies] = useState([]);
    const [activeBtn, clickHandeler, filterArr] = useBtn(2, coffies);
+   const [arrRightSlide2, setArrRightSlide2] = useState([]);
 
+   useEffect(() => {
+      async function s() {
+         let s = await apiRightSlide2("rightSlide2");
+         setArrRightSlide2(s);
+      }
+      s();
+   }, []);
    useOpacity(refImg, activeBtn);
 
    let bind = {
@@ -43,7 +50,7 @@ export default function Slide2() {
       <div className='mt-20 lg:mt-40 grid grid-cols-1 lg:grid-cols-5 container '>
          <div className='md:col-span-2 lg:block hidden'>
             <div ref={refImg}>
-               <img src={arrRightSlide2.find((item) => item.id === activeBtn)?.img} alt='' />
+               <img src={arrRightSlide2?.find((item) => item.id === activeBtn)?.img} alt='' />
             </div>
          </div>
          <div className='lg:col-span-3'>

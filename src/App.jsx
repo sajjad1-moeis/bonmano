@@ -4,11 +4,9 @@ import {routes} from "./Routes/Routes";
 import ContextAll from "../Context/Context";
 import {ModalSearch, ModalLogin, ModalRegester} from "./components/Modals/Modals";
 import {DrawerBasket, DrawerMenu} from "./components/Drawer/Drawer";
-import ApiCoffie from "./Supbase/Api";
 import AlertSuccess from "./components/Alret/Alret";
 import {AlertEror} from "./components/Alret/Alret";
 import Loader from "./components/Loader/Loader";
-let arrCoffie = ApiCoffie();
 
 function App() {
    const routerPages = useRoutes(routes);
@@ -40,7 +38,6 @@ function App() {
             showSearch,
             drawerBasket,
             drawerMenu,
-            arrCoffie,
             showLogin,
             isLogin,
             showRegester,

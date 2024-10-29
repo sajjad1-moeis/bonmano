@@ -1,12 +1,12 @@
 import React, {useContext} from "react";
-import {Badge, Avatar, Input} from "@material-tailwind/react";
 import {IoIosNotifications} from "react-icons/io";
 import {IoSearch} from "react-icons/io5";
 import {HiMenu} from "react-icons/hi";
-import contextAdmin from "../../../Context/ContextAdmin";
+import ContextAdmin from "../../../Context/ContextAdmin";
 import {FaUserCircle} from "react-icons/fa";
+
 export default function TopBar() {
-   let context = useContext(contextAdmin);
+   let context = useContext(ContextAdmin);
    return (
       <div className='flex items-center justify-between bg-grayAdmin p-3 pe-6 rounded-xl bg'>
          <div className='p-2 px-4 rounded-lg  h-max hidden md:flex justify-between bg-gray-1000 text-gray-500 items-center'>
